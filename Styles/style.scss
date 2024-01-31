@@ -1,0 +1,70 @@
+//Variables
+$body-BG-color: hsl(218, 23%, 16%);
+$advice-UI-BG-color: hsl(217, 19%, 24%);
+$advice-color: hsl(150, 100%, 66%);
+
+@use 'reset';
+//Google Font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+
+
+@mixin Flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    @include Flex(column);
+    font-family: 'Manrope', sans-serif;
+
+    background-color: $body-BG-color;
+}
+
+.wrapper {
+    @include Flex(column);
+    max-width: 22rem;
+    flex: 1
+}
+
+.main-container {
+    @include Flex(column);
+    gap: 1em;
+    background-color: $advice-UI-BG-color;
+    padding: 1.5em;
+    color: white;
+    border-radius: 10px;
+}
+
+.advice-number {
+    color: $advice-color;
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.advice-text {
+    text-align: center;
+    opacity: 0.7;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.pattern-container {
+    position: relative;
+    
+}
+
+.advice-button {
+    cursor: pointer;
+    position: relative;
+    background-color: $advice-color;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    top: 55px;
+    
+}
