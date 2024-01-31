@@ -11,31 +11,20 @@
 
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 0.75rem;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="wrapper">
     <main class="main-container">
       <div class="advice-number">
-        Advice # <span id="number">78</span>
+        Advice # <span id="number"></span>
       </div>
 
       <div class="advice-text">
-        <p id="advice-id"> it is easy to sit up and take notice,
-          what's difficult is getting up and taking action"</p>
+        <p id="advice-id"> "it is easy to sit up and take notice,
+            what's difficult is getting up and taking action"</p>
       </div>
-
+      
       <div class="pattern-container">
         <picture>
           <source srcset="./images/pattern-divider-desktop.svg" media="(min-width:50rem)">
@@ -44,12 +33,9 @@
         </picture>
       </div>
 
-      <div class="dice-container">
-        <button class="advice-button">
-          <img src="./images/icon-dice.svg" alt="">
-        </button>
-      </div>
-
+      <button class="advice-button">
+        <img src="./images/icon-dice.svg" alt="">
+      </button>
 
     </main>
   </div>
