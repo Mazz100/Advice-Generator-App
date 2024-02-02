@@ -70,9 +70,10 @@ body {
     bottom: 0;
     transform: translateY(50%);
     transition: all 0.2s ease-in;
+
 }
 
-.advice-button:hover{
+.advice-button:hover {
     box-shadow: 1px 1px 15px $advice-color;
 }
 
@@ -94,7 +95,7 @@ body {
 
 
 @media (min-width: 50rem) {
-    .wrapper{
+    .wrapper {
         max-width: 28rem;
     }
 }
