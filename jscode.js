@@ -6,6 +6,8 @@ adviceBTN.addEventListener("click", () => {
     FetchAdvice();
 });
 
+FetchAdvice();
+
 // Fetching API using await method
 async function FetchAdvice() {
     try {
@@ -13,12 +15,17 @@ async function FetchAdvice() {
 
         //Check if response is failed
         if (!response.ok) {
-            throw new Error("Could not fetch resource");
+            throw new Error("Could not fetch resources");
         }
-
+        
         const data = await response.json();
 
-        console.log(data);
+        // Accessing the parent object before targeting a specific object array
+        const advice = data.slip.advice;
+        const id = data.slip.id;
+       
+        adviceText.textContent = `"${advice}"`;
+        adviceId.textContent = id;
     }
 
     catch (error) {

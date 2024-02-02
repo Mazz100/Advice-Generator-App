@@ -153,9 +153,6 @@ body {
   transform: translateY(50%);
   transition: all 0.2s ease-in;
 }
-.advice-button img {
-  transform: rotate(0);
-}
 
 .advice-button:hover {
   box-shadow: 1px 1px 15px hsl(150, 100%, 66%);
