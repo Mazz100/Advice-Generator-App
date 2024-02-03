@@ -35,22 +35,25 @@ body {
     position: relative;
     gap: 1em;
     background-color: $advice-UI-BG-color;
-    padding: 1.3em;
+    padding: 2em;
     color: white;
     border-radius: 10px;
 }
 
 .advice-number {
     color: $advice-color;
-    font-size: 0.75rem;
+
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    
+    h1{
+        font-size: 0.75rem;
+    }
 }
 
 .advice-quote {
     text-align: center;
-    opacity: 0.7;
     font-weight: 800;
     font-size: 1.5rem;
 }
@@ -96,6 +99,6 @@ body {
 
 @media (min-width: 50rem) {
     .wrapper {
-        max-width: 28rem;
+        max-width: 30rem;
     }
 }
